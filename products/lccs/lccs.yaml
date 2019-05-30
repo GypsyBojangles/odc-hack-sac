@@ -1,0 +1,19 @@
+name: lccs_fiji
+description: 'Landsat 8 and Sentinel 1 Landcover Classification for Fiji'
+metadata_type: eo
+
+metadata:
+  format:
+    name: GeoTiff
+  instrument:
+    name: combined
+  platform:
+    code: combined
+  product_type: lccs
+
+measurements:
+  - dtype: int16
+    name: lccs
+    nodata: -1
+    units: '1'
+

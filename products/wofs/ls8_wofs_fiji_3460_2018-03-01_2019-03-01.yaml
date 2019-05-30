@@ -1,0 +1,54 @@
+creation_dt: 2019-05-22
+extent:
+  center_dt: '2018-08-30 00:00:00.0000000Z'
+  coord:
+    ll:
+      lat: -18.43213578253868
+      lon: 176.478511245894
+    lr:
+      lat: -18.444221583123223
+      lon: 179.50765779317052
+    ul:
+      lat: -16.98749556918372
+      lon: 176.49662826741815
+    ur:
+      lat: -16.998575840802562
+      lon: 179.50161091206445
+  from_dt: '2018-03-01 00:00:01.0000000Z'
+  to_dt: '2019-03-01 23:59:59.9999999Z'
+format:
+  name: GeoTiff
+
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 1760000.0
+        y: 3840010.0
+      lr:
+        x: 2080010.0
+        y: 3840010.0
+      ul:
+        x: 1760000.0
+        y: 4000000.0
+      ur:
+        x: 2080010.0
+        y: 4000000.0
+    spatial_reference: EPSG:3460
+id: 04907ac0-adf6-457f-96a0-33101466ffcf
+image:
+  bands:
+    count_wet:
+      path: ls8_wofs_fiji_3460_2018-03-01_2019-03-01_count_wet.tif
+    count_clear:
+      path: ls8_wofs_fiji_3460_2018-03-01_2019-03-01_count_clear.tif
+    frequency:
+      path: ls8_wofs_fiji_3460_2018-03-01_2019-03-01_frequency.tif
+
+instrument:
+  name: OLI_TIRS
+lineage:
+  source_datasets: {}
+platform:
+  code: LANDSAT_8
+product_type: wofs_statistical_summary_fiji

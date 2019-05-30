@@ -1,0 +1,95 @@
+            {
+                # Included as a keyword  for the layer
+                "label": "LCCS",
+                # Included as a keyword  for the layer
+                "type": "",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """""",
+                # The WMS name for the layer
+                "name": "lccs_fiji",
+                # The Datacube name for the associated data product
+                "product_name": "lccs_fiji",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                # "pq_dataset": "s2b_ard_granule",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                # "pq_band": "pixel_quality",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 10.0,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [150, 180, 200, 160],
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # 9 is good value for imagery of Australia.
+                "time_zone": 12,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_info_flags": [],
+                # Define layer wide legend graphic if no style is passed
+                # to GetLegendGraphic
+                "wcs_default_bands": ["lccs"],
+                # Styles.
+                #
+                # See band_mapper.py
+                #
+                # The various available spectral bands, and ways to combine them
+                # into a single rgb image.
+                # The examples here are ad hoc
+                #
+                "styles": [
+                    # Examples of styles which are linear combinations of the available spectral bands.
+                    #
+                    {
+                        "name": "lccs_fiji",
+                        "title": "Level 3 Land Cover Classification",
+                        "abstract": "Level 3 Land Cover Classification",
+                        "needed_bands": ["lccs"],
+                        "color_ramp": [
+                            {
+                                "value": 111,
+                                "color": "#C0FF00"
+                            },
+                            {
+                                "value": 112,
+                                "color": "#008000"
+                            },
+                            {
+                                "value": 123,
+                                "color": "#00FFF5"
+                            },
+                            {
+                                "value": 124,
+                                "color": "#00C07A"
+                            },
+                            {
+                                "value": 215,
+                                "color": "#FF00FF"
+                            },
+                            {
+                                "value": 216,
+                                "color": "#FFC0A0"
+                            },
+                            {
+                                "value": 227,
+                                "color": "#009BFF"
+                            },
+                            {
+                                "value": 228,
+                                "color": "#0000FF"
+                            }
+                        ]
+                    },
+                ],
+                # Default style (if request does not specify style)
+                # MUST be defined in the styles list above.
+                # (Looks like Terria assumes this is the first style in the list, but this is
+                #  not required by the standard.)
+                "default_style": "lccs_fiji",
+            },  # Fiji LCCS

@@ -1,0 +1,66 @@
+creation_dt: 2019-05-22
+extent:
+  center_dt: '2018-08-30 00:00:00.0000000Z'
+  coord:
+    ll:
+      lat: -18.43213578253868
+      lon: 176.478511245894
+    lr:
+      lat: -18.444221583123223
+      lon: 179.50765779317052
+    ul:
+      lat: -16.98749556918372
+      lon: 176.49662826741815
+    ur:
+      lat: -16.998575840802562
+      lon: 179.50161091206445
+  from_dt: '2018-03-01 00:00:01.0000000Z'
+  to_dt: '2019-03-01 23:59:59.9999999Z'
+format:
+  name: GeoTiff
+
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 1760000.0
+        y: 3840010.0
+      lr:
+        x: 2080010.0
+        y: 3840010.0
+      ul:
+        x: 1760000.0
+        y: 4000000.0
+      ur:
+        x: 2080010.0
+        y: 4000000.0
+    spatial_reference: EPSG:3460
+id: 03350547-756a-4f92-bf31-20b3aa394727
+image:
+  bands:
+    BS_PC_10:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_BS_PC_10.tif
+    BS_PC_50:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_BS_PC_50.tif
+    BS_PC_90:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_BS_PC_90.tif
+    PV_PC_10:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_PV_PC_10.tif
+    PV_PC_50:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_PV_PC_50.tif
+    PV_PC_90:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_PV_PC_90.tif
+    NPV_PC_10:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_NPV_PC_10.tif
+    NPV_PC_50:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_NPV_PC_50.tif
+    NPV_PC_90:
+      path: ls8_fcp_fiji_3460_2018-03-01_2019-03-01_NPV_PC_90.tif
+
+instrument:
+  name: OLI_TIRS
+lineage:
+  source_datasets: {}
+platform:
+  code: LANDSAT_8
+product_type: fractional_cover_percentiles_fiji

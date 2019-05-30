@@ -1,0 +1,48 @@
+creation_dt: 2019-05-22
+extent:
+  center_dt: '2018-08-30 00:00:00.0000000Z'
+  coord:
+    ll:
+      lat: -18.17640559881736
+      lon: 178.28091784578652
+    lr:
+      lat: -18.173523281596292
+      lon: 178.65778637847674
+    ul:
+      lat: -17.90992417735219
+      lon: 178.27899004142648
+    ur:
+      lat: -17.90708691808463
+      lon: 178.65529194011046
+  from_dt: '2018-03-01 00:00:01.0000000Z'
+  to_dt: '2019-03-01 23:59:59.9999999Z'
+format:
+  name: GeoTiff
+id: 29dbe2ec-dbf8-4630-b747-4580e2e57f1e
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 635475.0
+        y: 7989825.0
+      lr:
+        x: 675345.0
+        y: 7989825.0
+      ul:
+        x: 635475.0
+        y: 8019315.0
+      ur:
+        x: 675345.0
+        y: 8019315.0
+    spatial_reference: EPSG:32760
+image:
+  bands:
+    lccs:
+      path: Fiji-Suva.tif
+instrument:
+  name: combined
+lineage:
+  source_datasets: {}
+platform:
+  code: combined
+product_type: lccs

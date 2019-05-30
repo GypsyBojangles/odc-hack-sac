@@ -1,0 +1,28 @@
+name: ls_usgs_wofs_fiji
+description: 'Landsat 8 WOfS Summary based on USGS Level 2 Scenes'
+metadata_type: eo
+
+metadata:
+  format:
+    name: GeoTiff
+  instrument:
+    name: OLI_TIRS
+  platform:
+    code: LANDSAT_8
+  product_type: wofs_statistical_summary_fiji
+
+measurements:
+
+  - name: count_wet
+    dtype: int16
+    nodata: -1
+    units: '1'
+  - name: count_clear
+    dtype: int16
+    nodata: -1
+    units: '1'
+  - name: frequency
+    dtype: float32
+    nodata: -1
+    units: '1'
+

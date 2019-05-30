@@ -1,0 +1,55 @@
+creation_dt: 2019-05-17
+extent:
+  center_dt: '2016-09-17 22:06:51.7679070Z'
+  coord:
+    ll:
+      lat: -18.413474860607124
+      lon: 177.79329929207503
+    lr:
+      lat: -18.391818828347326
+      lon: 179.97653843132142
+    ul:
+      lat: -16.298227247889457
+      lon: 177.78425216544971
+    ur:
+      lat: -16.279202050179588
+      lon: 179.9426484515394
+  from_dt: '2016-09-17 22:06:51.7679070Z'
+  to_dt: '2016-09-17 22:06:51.7679070Z'
+format:
+  name: GeoTiff
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 583785.0
+        y: -2036115.0
+      lr:
+        x: 814515.0
+        y: -2036115.0
+      ul:
+        x: 583785.0
+        y: -1802085.0
+      ur:
+        x: 814515.0
+        y: -1802085.0
+    spatial_reference: PROJCS["WGS 84 / UTM zone 60N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS
+      84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",177],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32660"]]
+id: 5f7dc015-595a-42ab-8066-e0fdbed8ac48
+image:
+  bands:
+    BS:
+      path: LC08_L1TP_074072_20160917_20170321_01_T1_FC_BS.tif
+    NPV:
+      path: LC08_L1TP_074072_20160917_20170321_01_T1_FC_NPV.tif
+    PV:
+      path: LC08_L1TP_074072_20160917_20170321_01_T1_FC_PV.tif
+    UE:
+      path: LC08_L1TP_074072_20160917_20170321_01_T1_FC_UE.tif
+instrument:
+  name: OLI_TIRS
+lineage:
+  source_datasets: {}
+platform:
+  code: LANDSAT_8
+product_type: fractional_cover

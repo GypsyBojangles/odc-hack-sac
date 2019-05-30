@@ -1,0 +1,49 @@
+creation_dt: 2019-05-22
+extent:
+  center_dt: '2018-08-30 00:00:00.0000000Z'
+  coord:
+    ll:
+      lat: -18.45606999404008
+      lon: 176.8107253445441
+    lr:
+      lat: -18.446115660407344
+      lon: 178.9523303822476
+    ul:
+      lat: -16.99286232480428
+      lon: 176.8122547331468
+    ur:
+      lat: -16.98374570853891
+      lon: 178.93656699030623
+  from_dt: '2018-03-01 00:00:01.0000000Z'
+  to_dt: '2019-03-01 23:59:59.9999999Z'
+format:
+  name: GeoTiff
+id: 021abfe4-00ea-4f9d-9367-42ed2616cac9
+
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 480015.0
+        y: 7959345.0
+      lr:
+        x: 706185.0
+        y: 7959345.0
+      ul:
+        x: 480015.0
+        y: 8121225.0
+      ur:
+        x: 706185.0
+        y: 8121225.0
+    spatial_reference: EPSG:32760
+image:
+  bands:
+    lccs:
+      path: lccs_fiji_.tif
+instrument:
+  name: combined
+lineage:
+  source_datasets: {}
+platform:
+  code: combined
+product_type: lccs
